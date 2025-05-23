@@ -164,7 +164,7 @@ Follow on-screen instructions to choose between unpacking, editing, or repacking
 
 This project started as "hrtool" on Telegram. For contributions, feature requests, or collaboration:
 
-* [Telegram Channel/Group](https://t.me/hrtool)
+* [Telegram Channel/Group](https://t.me/HRModster_DevGC)
 * [GitHub Issues](https://github.com/Calamivathan/HRTOOL/issues)
 
 ---

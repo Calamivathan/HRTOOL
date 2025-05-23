@@ -1,6 +1,6 @@
 # AssetCrafter
 
-> ✨ Project formerly known as **HRTool** on Telegram
+> ✨ Project formerly known as **[HRTool](https://t.me/HRModster)** on Telegram
 
 **AssetCrafter** is a powerful, modular toolkit for reverse engineering and modifying compressed game archive files such as `.pak`, `.dat`, and `.obb`. Built for speed, flexibility, and usability in Termux or desktop Linux environments, it supports complex workflows including Zstandard (zstd) decompression with or without dictionaries, XOR decryption, zlib stream carving, and repacking.
 

@@ -215,9 +215,10 @@ wget https://github.com/Calamivathan/HRTOOL/releases/download/%23HRTOOL_V6_PC/hr
 ---
 
 ## ✉ Contributing / Contact
- ❤️ Huge thanks to our passionate private community of **340+ members** 🙌  
- Your continuous support, testing, and feedback made this public release possible! 🚀✨
- This project started as "hrtool" on Telegram. For contributions, feature requests, or collaboration:
+❤️ Huge thanks to our passionate private community of **340+ members** 🙌  
+Your continuous support, testing, and feedback made this public release possible! 🚀✨
+ 
+This project started as "hrtool" on Telegram. For contributions, feature requests, or collaboration:
 
 * [Telegram Channel/Group](https://t.me/HRModster_DevGC)
 * [GitHub Issues](https://github.com/Calamivathan/HRTOOL/issues)

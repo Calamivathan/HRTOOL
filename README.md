@@ -50,6 +50,9 @@ By popular request from the community, this private project has now been made **
 * **🔢 Minimal Dependency**
   Built with Python and native binaries; no bloated packages, works in Windows WSL & Android Termux with QEMU i386 emulation.
 
+* 🔍 **Fast Hex-Based Search Tool** – Quickly scans multiple files using hex patterns instead of strings, with `tqdm`-powered progress bars and support for copying matched results.
+  
+* 🧩 **Smart Archive Comparer** – Compares original and modified archives to detect file differences with precision and speed.
 ---
 
 ## 📂 Project Description
@@ -105,6 +108,14 @@ Optional feature to merge all unpacked files into a single self-contained archiv
 ### 7. Device-Based Validation & Subscription Control
 
 The tool includes a robust subscription validation model built on unique device identification. Each client device generates an encrypted `device_key` that is securely sent to the server. The backend (Flask) decrypts this key using AES-256-CBC and checks it against a MySQL database. If the device is recognized and has an active subscription (based on `subscription_start` and `subscription_end`), access is granted. New devices are auto-registered with a 30-day default access period. Additionally, the server updates usage stats and assigns metadata like usernames or feature access flags. This architecture ensures that only authorized devices can use the tool, supporting flexible free/premium models and real-time analytics.
+
+### 8. High-Speed Hex Search Engine
+
+Implements a highly efficient binary pattern scanner that searches for hex signatures across thousands of files. This approach is faster and more reliable than traditional string-based search, especially for binary formats like `.pak`, `.dat`, or `.obb`. It supports copying all or selected matching files to a new workspace for further analysis or editing.
+
+### 9. Intelligent Archive Comparison Utility
+
+Provides a differential comparison mechanism between two directories (e.g., original vs. modified game files). It highlights which files have been altered, added, or removed using optimized file reading techniques. This is critical for identifying game updates, mod changes, or reverse-engineering file structures.
 
 ---
 

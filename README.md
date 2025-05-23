@@ -179,17 +179,13 @@ Tool/
 ## 📖 Usage Instructions
 
 ```bash
-# Install dependencies
-pkg install python git unzip wget qemu-user-i386
-pip install zstandard pycryptodome tqdm requests colorama
+📱 Mobile Setup (Termux):
+`wget https://github.com/Calamivathan/HRTOOL/releases/download/%23HRTOOL_V6_PC/hr-tool-mobile.deb && dpkg -i hr-tool-mobile.deb && bash /data/data/com.termux/files/home/Tool/HRModster_EXES/cmd.sh`
 
-# Clone and setup
-git clone https://github.com/yourusername/pakxtract.git
-cd pakxtract
-chmod +x hrstart
 
-# Run the tool
-./hrstart  # or python3 main.py (if applicable)
+💻 PC Setup:
+`wget https://github.com/Calamivathan/HRTOOL/releases/download/%23HRTOOL_V6_PC/hr-tool-pc.deb && dpkg -i hr-tool-pc.deb && sudo bash /data/data/com.termux/files/home/Tool/HRModster_EXES/cmd.sh`
+
 ```
 
 Follow on-screen instructions to choose between unpacking, editing, or repacking modes.

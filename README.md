@@ -1,7 +1,7 @@
 
 <p align="center">
   <img src="https://github.com/Calamivathan/HRTOOL/blob/main/logo.png?raw=true" alt="AssetCrafter Logo" width="80" style="vertical-align: left;" />
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=90&pause=100&color=2F80ED&center=true&vCenter=true&width=1000&lines=AssetCrafter" alt="AssetCrafter Banner" style="vertical-align: middle;" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=60&pause=100&color=2F80ED&center=true&vCenter=true&width=900&lines=AssetCrafter" alt="AssetCrafter Banner" style="vertical-align: middle;" />
 </p>
 
 > ✨ Project formerly known as **[HRTool](https://t.me/HRModster)** on Telegram

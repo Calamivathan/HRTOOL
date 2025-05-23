@@ -1,6 +1,6 @@
 <p align="center" style="display: flex; align-items: center; justify-content: center;">
   <img src="https://github.com/Calamivathan/HRTOOL/blob/main/logo.jpg?raw=true" alt="HRTool Logo" width="100" style="margin-right: 15px;"/>
-  <span style="font-size: 100px; font-weight: bold;"># AssetCrafter</span>
+  <h1 align="center">AssetCrafter</h1>
 </p>
 
 > ✨ Project formerly known as **[HRTool](https://t.me/HRModster)** on Telegram

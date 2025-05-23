@@ -1,0 +1,172 @@
+# PakXtract
+
+> ✨ Project formerly known as **hrtool** on Telegram
+
+**PakXtract** is a powerful, modular toolkit for reverse engineering and modifying compressed game archive files such as `.pak`, `.dat`, and `.obb`. Built for speed, flexibility, and usability in Termux or desktop Linux environments, it supports complex workflows including Zstandard (zstd) decompression with or without dictionaries, XOR decryption, zlib stream carving, and repacking.
+
+---
+
+## 🚀 Key Features
+
+* **🔍 Deep Archive Analysis**
+  Scans large `.pak`, `.dat`, or `.obb` files for known compression signatures and magic numbers to extract individual game assets.
+
+* **🔒 Zstandard Support**
+  Decompress segments using Zstandard with or without custom dictionaries embedded in the archive.
+
+* **⚡ High-Speed Processing**
+  Supports multithreaded decompression for dictionary-based archives, drastically improving extraction speeds.
+
+* **🔄 Seamless Repacking**
+  Modify extracted files and repack them into `.pak` files using optimized compression that fits within original segment sizes.
+
+* **🤍 XOR Encryption & Decryption**
+  Automatically detects and decodes XOR-obfuscated game files.
+
+* **🛠️ Zlib Stream Detection**
+  Uses tools like Offzip and custom C logic to locate, extract, and decompress zlib and raw deflate streams.
+
+* **🔧 Rebuilding Tools**
+  Extracted segments can be patched and merged into a valid, working `.pak` archive with byte-level control.
+
+* **🪡 Modular Directory Structure**
+  Clearly defined folder layout for original files, extracted assets, edited versions, and repacked outputs.
+
+* **🔢 Minimal Dependency**
+  Built with Python and native binaries; no bloated packages, works in Termux with QEMU i386 emulation.
+
+---
+
+## 📂 Project Description
+
+**PakXtract** was designed for developers, modders, and researchers who need to analyze or modify encrypted/compressed game resource files. Many games store their assets in large monolithic `.pak` or `.dat` files that are compressed using Zstandard, zlib, or deflate, and sometimes obfuscated with XOR. These archives often lack indexes or use non-standard formats.
+
+PakXtract solves this by:
+
+* Scanning binary files for known compression headers (e.g., `0x28B52FFD`, `0x78 9C`, etc.)
+* Extracting segments into standalone `.dat` chunks
+* Decompressing them using Zstandard (with dictionary if required) or zlib
+* Allowing user modification
+* Recompressing with best-fit compression level and reassembling the full archive
+
+---
+
+## 💡 Concepts & Architecture
+
+### 1. Segment-Based Extraction
+
+Pak files are divided into compressed segments, each starting with a magic number (`0x28B52FFD`). PakXtract identifies these boundaries and extracts them individually.
+
+### 2. Zstandard Compression
+
+Supports both:
+
+* Standard zstd compression
+* Zstd with dictionary (auto-detected using `0x37A430EC` marker)
+
+Uses the Python `zstandard` module to decompress and recompress.
+
+### 3. XOR Decryption
+
+For files obfuscated with XOR, the tool attempts known XOR keys or brute-force decoding using file signature matching.
+
+### 4. Zlib Stream Extraction (Offzip Mode)
+
+* Searches for `0x78 9C`, `0x78 DA`, etc.
+* Uses Offzip logic or custom C tools to extract valid deflate/zlib streams
+* Useful when analyzing embedded compressed blobs without a file table
+
+### 5. Repacking Workflow
+
+* Extracted segments can be modified freely
+* The tool tries compressing at zstd levels 1-22 until output fits within original segment size
+* Pads with `\x00` if needed for alignment
+* Replaces the segment in a copy of the original `.pak`
+
+### 6. One-File Bundle Output
+
+Optional feature to merge all unpacked files into a single self-contained archive for easy patch distribution.
+
+---
+
+## 🏢 Directory Layout
+
+```
+~/Tool/obb/
+├── original_zsdic_pak/       # Raw input pak files
+├── unpack_zsdic_pak/         # Decompressed segments
+├── edited_dat_zsdic/         # Files modified by user
+└── repacked_zsdic/           # Final repacked output
+```
+
+---
+
+## 🚧 Requirements
+
+* Python 3.x
+* pip modules:
+
+  * `zstandard`
+  * `pycryptodome`
+  * `tqdm`
+  * `requests`
+  * `colorama`
+* Termux (for mobile users)
+* `qemu-user-i386` if running legacy tools
+
+---
+
+## 📖 Usage Instructions
+
+```bash
+# Install dependencies
+pkg install python git unzip wget qemu-user-i386
+pip install zstandard pycryptodome tqdm requests colorama
+
+# Clone and setup
+git clone https://github.com/yourusername/pakxtract.git
+cd pakxtract
+chmod +x hrstart
+
+# Run the tool
+./hrstart  # or python3 main.py (if applicable)
+```
+
+Follow on-screen instructions to choose between unpacking, editing, or repacking modes.
+
+---
+
+## 📊 Use Cases
+
+* Game asset modding and patching
+* Mobile reverse engineering research
+* Compressed archive forensics
+* Data extraction from proprietary or encrypted formats
+
+---
+
+## 🌟 Why PakXtract?
+
+* Designed for both technical and casual users
+* Modular, clean folder structure
+* Rebuilds valid, working archives
+* Portable and lightweight
+* Supports modern compression methods
+* Fully scriptable for automation
+
+---
+
+## ✉ Contributing / Contact
+
+This project started as "hrtool" on Telegram. For contributions, feature requests, or collaboration:
+
+* [Telegram Channel/Group](https://t.me/hrtool)
+* [GitHub Issues](https://github.com/yourusername/pakxtract/issues)
+
+---
+
+## ⚖️ License
+
+MIT License. Free to use, modify, and distribute.
+
+> © 2025 PakXtract Team. Made with passion for reverse engineering and clean code.

@@ -1,4 +1,4 @@
-# AssetCrafter<p align="center">
+# AssetCrafter<p>
   <img src="https://github.com/Calamivathan/HRTOOL/blob/main/logo.jpg?raw=true" alt="HRTool Logo" width="150"/>
 </p>
 

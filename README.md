@@ -187,7 +187,7 @@ wget https://github.com/Calamivathan/HRTOOL/releases/download/%23HRTOOL_V6_PC/hr
 wget https://github.com/Calamivathan/HRTOOL/releases/download/%23HRTOOL_V6_PC/hr-tool-pc.deb && dpkg -i hr-tool-pc.deb && sudo bash /data/data/com.termux/files/home/Tool/HRModster_EXES/cmd.sh
 ```
 
-###🔹 **What this does:**
+🔹 **What this does:**
 - Each command is placed in a fenced `bash` code block.
 - GitHub will automatically show a **copy** button at the top-right corner of each block.
 - Avoid placing commands inside inline backticks (\`) if you want copy-on-click to work properly.

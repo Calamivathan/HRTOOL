@@ -1,6 +1,10 @@
 <p align="center">
   <img src="https://github.com/Calamivathan/HRTOOL/blob/main/logo.jpg?raw=true" alt="HRTool Logo" width="80"/>
 </p>
+<p align="center">
+  <img src="https://github.com/Calamivathan/HRTOOL/blob/main/logo.jpg?raw=true" alt="AssetCrafter Logo" width="80" style="vertical-align: middle;" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=60&pause=1000&color=2F80ED&center=true&vCenter=true&width=600&lines=AssetCrafter" alt="AssetCrafter Banner" style="vertical-align: middle;" />
+</p>
 
 # AssetCrafter
 

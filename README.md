@@ -33,7 +33,7 @@
   Clearly defined folder layout for original files, extracted assets, edited versions, and repacked outputs.
 
 * **🔢 Minimal Dependency**
-  Built with Python and native binaries; no bloated packages, works in Termux with QEMU i386 emulation.
+  Built with Python and native binaries; no bloated packages, works in Windows WSL & Android Termux with QEMU i386 emulation.
 
 ---
 
@@ -55,7 +55,7 @@ AssetCrafter solves this by:
 
 ### 1. Segment-Based Extraction
 
-Pak files are divided into compressed segments, each starting with a magic number (`0x28B52FFD`). PakXtract identifies these boundaries and extracts them individually.
+Pak files are divided into compressed segments, each starting with a magic number (`0x28B52FFD`). AssetCrafter identifies these boundaries and extracts them individually.
 
 ### 2. Zstandard Compression
 
@@ -86,6 +86,10 @@ For files obfuscated with XOR, the tool attempts known XOR keys or brute-force d
 ### 6. One-File Bundle Output
 
 Optional feature to merge all unpacked files into a single self-contained archive for easy patch distribution.
+
+### 7. Device-Based Validation & Subscription Control
+
+The tool includes a robust subscription validation model built on unique device identification. Each client device generates an encrypted `device_key` that is securely sent to the server. The backend (Flask) decrypts this key using AES-256-CBC and checks it against a MySQL database. If the device is recognized and has an active subscription (based on `subscription_start` and `subscription_end`), access is granted. New devices are auto-registered with a 30-day default access period. Additionally, the server updates usage stats and assigns metadata like usernames or feature access flags. This architecture ensures that only authorized devices can use the tool, supporting flexible free/premium models and real-time analytics.
 
 ---
 
@@ -145,7 +149,7 @@ Follow on-screen instructions to choose between unpacking, editing, or repacking
 
 ---
 
-## 🌟 Why PakXtract?
+## 🌟 Why AssetCrafter?
 
 * Designed for both technical and casual users
 * Modular, clean folder structure

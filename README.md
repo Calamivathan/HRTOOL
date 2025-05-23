@@ -1,4 +1,7 @@
-# AssetCrafter
+# AssetCrafter<p align="center">
+  <img src="https://github.com/Calamivathan/HRTOOL/blob/main/logo.jpg?raw=true" alt="HRTool Logo" width="150"/>
+</p>
+
 
 > ✨ Project formerly known as **[HRTool](https://t.me/HRModster)** on Telegram
 

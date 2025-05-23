@@ -1,8 +1,8 @@
-# PakXtract
+# AssetCrafter
 
-> ✨ Project formerly known as **hrtool** on Telegram
+> ✨ Project formerly known as **HRTool** on Telegram
 
-**PakXtract** is a powerful, modular toolkit for reverse engineering and modifying compressed game archive files such as `.pak`, `.dat`, and `.obb`. Built for speed, flexibility, and usability in Termux or desktop Linux environments, it supports complex workflows including Zstandard (zstd) decompression with or without dictionaries, XOR decryption, zlib stream carving, and repacking.
+**AssetCrafter** is a powerful, modular toolkit for reverse engineering and modifying compressed game archive files such as `.pak`, `.dat`, and `.obb`. Built for speed, flexibility, and usability in Termux or desktop Linux environments, it supports complex workflows including Zstandard (zstd) decompression with or without dictionaries, XOR decryption, zlib stream carving, and repacking.
 
 ---
 
@@ -39,9 +39,9 @@
 
 ## 📂 Project Description
 
-**PakXtract** was designed for developers, modders, and researchers who need to analyze or modify encrypted/compressed game resource files. Many games store their assets in large monolithic `.pak` or `.dat` files that are compressed using Zstandard, zlib, or deflate, and sometimes obfuscated with XOR. These archives often lack indexes or use non-standard formats.
+**AssetCrafter** was designed for developers, modders, and researchers who need to analyze or modify encrypted/compressed game resource files. Many games store their assets in large monolithic `.pak` or `.dat` files that are compressed using Zstandard, zlib, or deflate, and sometimes obfuscated with XOR. These archives often lack indexes or use non-standard formats.
 
-PakXtract solves this by:
+AssetCrafter solves this by:
 
 * Scanning binary files for known compression headers (e.g., `0x28B52FFD`, `0x78 9C`, etc.)
 * Extracting segments into standalone `.dat` chunks
@@ -169,4 +169,4 @@ This project started as "hrtool" on Telegram. For contributions, feature request
 
 MIT License. Free to use, modify, and distribute.
 
-> © 2025 PakXtract Team. Made with passion for reverse engineering and clean code.
+> © 2025 @HRModster Team. Made with passion for reverse engineering and clean code.

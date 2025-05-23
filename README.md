@@ -122,11 +122,41 @@ Provides a differential comparison mechanism between two directories (e.g., orig
 ## 🏢 Directory Layout
 
 ```
-~/Tool/obb/
-├── original_zsdic_pak/       # Raw input pak files
-├── unpack_zsdic_pak/         # Decompressed segments
-├── edited_dat_zsdic/         # Files modified by user
-└── repacked_zsdic/           # Final repacked output
+Tool/
+├── HRModster_EXES/
+├── obb/
+│   ├── Original_obb/
+│   ├── repacked_obb/
+│   ├── Original_pak/
+│   ├── repacked_pak/
+│   ├── Searched_DAT/
+│   ├── Edited_Dat/
+│   ├── unpacked_obb/
+│   ├── Compared_DAT/
+│   ├── unpack_zsdic_pak/
+│   ├── unpacked_pak/
+│   ├── repacked_zsdic/
+│   ├── original_zsdic_pak/
+│   ├── edited_dat_zsdic/
+│   └── unpacked_ASS_pak/
+├── gamepatch/
+│   ├── Original_pak/
+│   ├── unpacked_ASS_DAT/
+│   ├── unpacked_RAW_DAT/
+│   ├── Edited_DEASS_DAT/
+│   ├── repacked_pak/
+│   ├── Searched_DAT/
+│   ├── Edited_DAT/
+│   └── Compared_DAT/
+└── mappak/
+    ├── Original_pak/
+    ├── unpacked_ASS_DAT/
+    ├── unpacked_RAW_DAT/
+    ├── Edited_DEASS_DAT/
+    ├── repacked_pak/
+    ├── Searched_DAT/
+    ├── Edited_DAT/
+    └── Compared_DAT/
 ```
 
 ---

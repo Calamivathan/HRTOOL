@@ -227,4 +227,4 @@ This project started as "hrtool" on Telegram. For contributions, feature request
 
 MIT License. Free to use, modify, and distribute.
 
-> © 2025 @HRModster Team. Made with passion for reverse engineering and clean code.
+> © 2025 @HRModster Team. Made with passion for reverse engineering and clean code, Jai Baba Ki.

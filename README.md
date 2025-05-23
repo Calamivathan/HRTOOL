@@ -5,6 +5,21 @@
 **AssetCrafter** is a powerful, modular toolkit for reverse engineering and modifying compressed game archive files such as `.pak`, `.dat`, and `.obb`. Built for speed, flexibility, and usability in Termux or desktop Linux environments, it supports complex workflows including Zstandard (zstd) decompression with or without dictionaries, XOR decryption, zlib stream carving, and repacking.
 
 ---
+## 📊 Project Stats
+
+- **Total Users:** `230+`
+- **Total Requests Served:** `46,100+`
+
+---
+
+## 🎉 Community Announcement
+
+🔓 **Good News!**  
+By popular request from the community, this private project has now been made **publicly available** on GitHub.
+
+> ⚠️ **Note:** The core *hasher logic* is not included, as it contains sensitive authentication and encryption code critical to the integrity of our validation system.
+
+---
 
 ## 🚀 Key Features
 

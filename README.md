@@ -165,7 +165,7 @@ Follow on-screen instructions to choose between unpacking, editing, or repacking
 This project started as "hrtool" on Telegram. For contributions, feature requests, or collaboration:
 
 * [Telegram Channel/Group](https://t.me/hrtool)
-* [GitHub Issues](https://github.com/yourusername/pakxtract/issues)
+* [GitHub Issues](https://github.com/Calamivathan/HRTOOL/issues)
 
 ---
 

@@ -1,5 +1,5 @@
 <p>
-  <img src="https://github.com/Calamivathan/HRTOOL/blob/main/logo.jpg?raw=true" alt="HRTool Logo" width="150"/>
+  <img src="https://github.com/Calamivathan/HRTOOL/blob/main/logo.jpg?raw=true" alt="HRTool Logo" width="100"/>
 </p>
 # AssetCrafter
 
